@@ -11,3 +11,9 @@ panic = "abort" # disable stack unwinding on panic
 # the profile for `cargo build --release`
 [profile.release]
 panic = "abort" # disable stack unwinding on panic
+
+# tell rust-analyzer don't build this binary in test or benchmark mode
+[[bin]]
+name = "mundane_os"
+test = false
+bench = false
