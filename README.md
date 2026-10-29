@@ -26,6 +26,8 @@ cargo rustc -- -C link-args="-e __start -static -nostartfiles"
 ```
 
 #### Compiling for the custom target specification
+We can compile our kernel with a custom target using our own target specification.
 ```
  cargo build --target x86_64-mundane_os.json
 ```
+`x86_64-mundane_os.json` is set as the default target in `.cargo/config.toml` so we can build the kernel using a simple `cargo build`.
