@@ -2,11 +2,12 @@
 name = "mundane_os"
 version = "0.1.0"
 edition = "2024"
+authors = ["Avuyile <mavu072@noreply.codeberg.org>"]
 
-[dependencies]
-
+# the profile for `cargo build`
 [profile.dev]
-panic = "abort"
+panic = "abort" # disable stack unwinding on panic
 
+# the profile for `cargo build --release`
 [profile.release]
-panic = "abort"
+panic = "abort" # disable stack unwinding on panic

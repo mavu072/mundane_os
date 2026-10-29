@@ -12,3 +12,14 @@ Compile our executable for a bare metal target:
 ```
 cargo build --target thumbv7em-none-eabihf
 ```
+
+#### Compiling for the host system
+We can compile for the host system by passing additional linker arguments:
+```
+# Linux
+cargo rustc -- -C link-arg=-nostartfiles
+# Windows
+cargo rustc -- -C link-args="/ENTRY:_start /SUBSYSTEM:console"
+# macOS
+cargo rustc -- -C link-args="-e __start -static -nostartfiles"
+```
