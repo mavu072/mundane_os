@@ -2,7 +2,7 @@
 name = "mundane_os"
 version = "0.1.0"
 edition = "2024"
-authors = ["Avuyile <mavu072@noreply.codeberg.org>"]
+authors = ["Avuyile <mavu072@users.noreply.github.com>"]
 
 # the profile for `cargo build`
 [profile.dev]
