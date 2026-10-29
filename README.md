@@ -24,3 +24,8 @@ cargo rustc -- -C link-args="/ENTRY:_start /SUBSYSTEM:console"
 # macOS
 cargo rustc -- -C link-args="-e __start -static -nostartfiles"
 ```
+
+#### Compiling for the custom target specification
+```
+ cargo build --target x86_64-mundane_os.json
+```
