@@ -1,4 +1,5 @@
 # Mundane OS
+A Rust OS kernel based on [os.phil-opp.com](https://os.phil-opp.com/).
 
 ### Bare Metal Environment
 We need a bare metal environment with no operating system to compile our executable.
