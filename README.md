@@ -53,3 +53,10 @@ After installing `bootimage` and `llvm-tools-preview` component, you can create 
 cargo bootimage
 ```
 This creates a bootable disk image in `target/x86_64-mundane_os/debug`. You can boot it in a virtual machine or copy to a USB to boot into physical hardware.
+
+#### Running with QEMU
+
+To boot it in [QEMU](https://www.qemu.org/), execute the following command:
+```
+qemu-system-x86_64 -drive format=raw,file=target/x86_64-mundane_os/debug/bootimage-mundane_os.bin
+```
